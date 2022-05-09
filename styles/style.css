@@ -150,12 +150,36 @@ body{
   transform: translate(-50%,-50%);
   top: 85%;
   left: 50%;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-#credit span {
+#credit a {
   color: #00ddec;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.source a{
+  text-decoration: none;
+  justify-content: center;
+}
+
+.source a{
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #000;
+  transition: ease-in-out 1s;
+}
+
+.source a:hover {
+  color: #fff;
+  background-color: #000000;
 }
 
 .Topic {
@@ -163,6 +187,16 @@ body{
   transform: translate(-50%,-50%);
   left: 50%;
   top: 20%;
-  font-size: 25px;
+  font-size: 35px;
   color: #354b4d;
+}
+
+@media only screen and (max-width: 850px) {
+  #credit {
+    font-size: 20px;
+  }
+  
+  .Topic {
+    font-size: 25px;
+  }
 }
